@@ -1,0 +1,53 @@
+- Working directory (Thư mục làm việc): Khu vực chứa dự án mà chúng ta đang làm việc.
+
+- Staging area (Khu vực sắp xếp): Khu vực chứa thông tin thay đổi của các file.
+
+- Repository (Git directory - thư mục git): Kho lưu trữ để lưu trữ dữ liệu, lịch sử các phiên bản.
+
+I. List of commonly used codes.
+
+	git --version: xem phiên bản git cài trên máy tính.
+	git --help: xem danh sách các câu lệnh git.
+	git config:
+		git config --global user: lấy thông tin user.
+		git config --global user.email/user.name: xem mail hoặc tên user.
+		git config --global user.email/user.nam "youremail/yourname": cập thộng mail hoặc tên user.
+	
+	git init: Tạo repo.
+	git status: xem trạng thái.
+	git add file_name/.: đẩy file_name/all_file vào staging.
+	git commit -m "yourmesseage": đẩy file từ staging vào repo kèm message.
+
+	git log: xem thông tin lịch sử commit.
+	git show commit_id: xem chi tiết một commmit.
+
+	git diff: <search gg>.
+	gitk: <search gg>.
+
+II. How to pull code.
+
+	git clone <link_https>
+
+III. How to push code.
+	
+	- The first way:
+		1. Tạo repo.
+		2. Pull repo về local: git clone <link_https>.
+		3. Viết code.
+		   [git status (kiểm tra trạng thái)].
+		   git add . (đẩy toàn bộ file vào staging).
+		   [git status (kiểm tra trạng thái)].
+		   git commit -m "yourmessage" (đẩy toàn bộ file vào repo).
+		   git push origin main.
+
+	- The second way:
+		1. Tạo repo.
+		2. git init.
+		3. Viết code.
+		   [git status (kiểm tra trạng thái)].
+		   git add . (đẩy toàn bộ file vào staging).
+		   [git status (kiểm tra trạng thái)].
+		   git commit -m "yourmessage" (đẩy toàn bộ file vào repo).
+		   git remote add origin https://…..
+		   git push origin main.  
+
