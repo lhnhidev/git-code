@@ -17,6 +17,7 @@ I. List of commonly used codes.
 	git status: xem trạng thái.
 	git add file_name/.: đẩy file_name/all_file vào staging.
 	git commit -m "yourmesseage": đẩy file từ staging vào repo kèm message.
+	git push: đẩy code sang repo.
 
 	git log: xem thông tin lịch sử commit.
 	git show commit_id: xem chi tiết một commmit.
