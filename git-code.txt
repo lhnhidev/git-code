@@ -51,3 +51,8 @@ III. How to push code.
 		   git remote add origin https://…..
 		   git push origin main.  
 
+IV. Different between ssh and https.
+	
+	ssh and https <search gg>.
+
+
